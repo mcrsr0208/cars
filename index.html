@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <style>
+      .wrapper {
+        display: flex;
+        justify-content: space-between;
+      }
+      .wrapper img {
+        width: 250px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container mt-5">
+      <div class="wrapper">
+        <div>
+          <img
+            id="image1"
+            src="https://www.toptal.com/designers/subtlepatterns/patterns/country-quilt-dark.png"
+            alt="image1"
+          />
+        </div>
+        <div>
+          <img
+            id="image2"
+            src="https://www.toptal.com/designers/subtlepatterns/patterns/country-quilt-dark.png"
+            alt="image1"
+          />
+        </div>
+        <div>
+          <img
+            id="image3"
+            src="https://www.toptal.com/designers/subtlepatterns/patterns/country-quilt-dark.png"
+            alt="image1"
+          />
+        </div>
+        <div>
+          <img
+            id="image4"
+            src="https://www.toptal.com/designers/subtlepatterns/patterns/country-quilt-dark.png"
+            alt="image1"
+          />
+        </div>
+      </div>
+    </div>
+    <script>
+      var image1 = document.getElementById("image1");
+      var image2 = document.getElementById("image2");
+      var image3 = document.getElementById("image3");
+      var image4 = document.getElementById("image4");
+      image1.addEventListener("click", function () {
+        image1.src =
+          "https://cdn.pixabay.com/photo/2012/04/12/23/48/car-30990__340.png";
+        image1.setAttribute("name", "car1");
+        if (image1.getAttribute("name") == image4.getAttribute("name")) {
+          console.log("Success");
+        }
+      });
+      image4.addEventListener("click", function () {
+        image4.src =
+          "https://cdn.pixabay.com/photo/2012/04/12/23/48/car-30990__340.png";
+        image4.setAttribute("name", "car1");
+        if (image1.getAttribute("name") == image4.getAttribute("name")) {
+          console.log("Success");
+        }
+      });
+      image2.addEventListener("click", function () {
+        image2.src =
+          "https://thumbor.forbes.com/thumbor/fit-in/1200x0/filters%3Aformat%28jpg%29/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5d35eacaf1176b0008974b54%2F0x0.jpg%3FcropX1%3D790%26cropX2%3D5350%26cropY1%3D784%26cropY2%3D3349";
+        image2.setAttribute("name", "car2");
+        if (image2.getAttribute("name") == image3.getAttribute("name")) {
+          console.log("Success");
+        }
+      });
+      image3.addEventListener("click", function () {
+        image3.src =
+          "https://thumbor.forbes.com/thumbor/fit-in/1200x0/filters%3Aformat%28jpg%29/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5d35eacaf1176b0008974b54%2F0x0.jpg%3FcropX1%3D790%26cropX2%3D5350%26cropY1%3D784%26cropY2%3D3349";
+        image3.setAttribute("name", "car2");
+        if (image2.getAttribute("name") == image3.getAttribute("name")) {
+          console.log("Success");
+        }
+      });
+    </script>
+  </body>
+</html>
